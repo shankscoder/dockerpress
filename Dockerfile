@@ -29,7 +29,7 @@ RUN chgrp -R apache /var/www/html/
 #
 # Update keys/salts in wp-config for security
 RUN                                     
-    RE='put your unique phrase here';   
+    RE='devfest123';   
     for i in {1..8}; do                 
         KEY=$(openssl rand -base64 40); 
         sed -i "0,/$RE/s|$RE|$KEY|" /var/www/html/wp-config.php;  
