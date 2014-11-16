@@ -1,4 +1,4 @@
-FROM       goldmann/f20
+FROM       simoncadman/fedora-20
 MAINTAINER Dusty Mabe 
 
 # Install httpd and update openssl
